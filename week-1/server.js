@@ -1,3 +1,10 @@
-const greet = require('./myModule'); 
+const http = require('http');
 
-console.log(greet('Sampada')); 
+const server = http.createServer((req, res) => {
+    res.write('Welcome to my first server!');
+    res.end();
+});
+
+server.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
