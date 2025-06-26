@@ -1,0 +1,55 @@
+# Week 2 – Node.js: Server Creation, `package.json`, and External Packages
+
+## What I Did in Week 2
+
+In Week 2 of my Node.js journey, I went deeper into backend fundamentals by learning how to:
+
+- Create a basic HTTP server using Node.js.
+- Understand and generate the `package.json` file.
+- Install and use external packages with npm.
+- Explore how packages help modularize and extend the functionality of Node applications.
+
+---
+
+## Creating a Basic Server
+
+Node.js has a built-in `http` module that allows us to create a web server without using any external libraries.
+
+##Key Concepts:
+
+- http.createServer() creates the server.
+
+- req.url checks the requested path.
+
+- res.write() sends data to the client.
+
+- server.listen(port) starts the server on a specific port.
+
+---
+
+# Understanding package.json
+
+In Node.js, the package file refers to package.json. It is a configuration file that contains metadata about your project and is essential for managing the project’s dependencies, scripts, versioning, and more.
+
+## What package.json contains:
+
+##Key	Description
+
+"name"	- Name of the project
+"version"	- Project version
+"description"	- Short description
+"main"	- Entry point file (e.g., index.js)
+"scripts"	- Custom commands like start, test, etc.
+"dependencies"	- Packages required in production
+"devDependencies"	- Packages only needed during development
+"author" / "license"	- Project ownership details
+
+---
+
+##How it's created:
+
+You generate it using:
+
+npm init         # guided setup (asks questions)
+npm init -y      # quick setup with default values
+
